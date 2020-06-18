@@ -20,7 +20,7 @@ format %td newdate
 *Establish the time variable
 tsset newdate
 
-*Timeseries plotting
+*Timeseries plotting USD relative to foreign currency
 tsline USD_IND, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("USD/IND")
 graph save USD_IND.gph
 
@@ -38,3 +38,22 @@ graph save USD_TBH.gph
 
 tsline USD_TRY, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("USD/TRY")
 graph save USD_TRY.gph
+
+*Timeseries plotting foreign currency relative to USD 
+tsline IND_USD, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("IND/USD")
+graph save IND_USD.gph
+
+tsline KRW_USD, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("KRW/USD")
+graph save KRW_USD.gph
+
+tsline CNY_USD, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("CNY/USD")
+graph save CNY_USD.gph
+
+tsline CZK_USD, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("CZK/USD")
+graph save CZK_USD.gph
+
+tsline THB_USD, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("THB/USD")
+graph save TBH_USD.gph
+
+tsline TRY_USD, tlabel(, format(%tddm)) ttitle("Date (2020)")  ytitle("TRY/USD")
+graph save TRY_USD.gph
